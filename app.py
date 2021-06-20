@@ -4,14 +4,16 @@ import pickle
 import numpy as np
 import pandas as pd
 import sklearn
+from my_streamlit import main
+import streamlit as st
 
 app=Flask(__name__)
-pickle_in=open('classifier.pkl','rb')
-classifier=pickle.load(pickle_in)
+#pickle_in=open('classifier.pkl','rb')
+#classifier=pickle.load(pickle_in)
 
 @app.route('/')
 def welcome():
-    return "Welocme to used car price prediction"
+    return main()
 
 @app.route('/predict', methods=['POST'])
 def predict():

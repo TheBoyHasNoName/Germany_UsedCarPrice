@@ -4,7 +4,6 @@ Created on Thu Jun 17 19:24:46 2021
 
 @author: Pranav Gowtham Bulusu
 """
-
 import pickle
 import streamlit as st
 
